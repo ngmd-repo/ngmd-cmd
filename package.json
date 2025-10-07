@@ -26,6 +26,6 @@
     "ngmd-cmd": "bin/index.mjs"
   },
   "devDependencies": {
-    "@ngmd/git-flow": "~0.0.1"
+    "@ngmd/git-flow": "~0.0.2"
   }
 }
