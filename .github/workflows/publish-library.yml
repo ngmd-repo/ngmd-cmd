@@ -1,0 +1,17 @@
+name: Publish Library
+on:
+  pull_request:
+    branches: [master]
+    types: [closed]
+jobs:
+  publish-library:
+    permissions:
+      id-token: write
+      contents: read
+    uses: ngmd-repo/ngmd-pipelines/.github/workflows/npm-deploy.yml@feature/pipelines
+    with:
+      title: ${{ github.event.pull_request.title }}
+      publish-directory: "./lib"
+      build-script: npm run lib:build
+    secrets:
+      NPM_LIBRARY_TOKEN: ${{ secrets.NPM_LIBRARY_TOKEN }}
