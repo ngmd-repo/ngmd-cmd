@@ -3,6 +3,7 @@ on:
   pull_request:
     branches: [master]
     types: [closed]
+  push:
 jobs:
   publish-library:
     permissions:
@@ -12,6 +13,7 @@ jobs:
     with:
       title: ${{ github.event.pull_request.title }}
       publish-directory: "./lib"
-      build-script: npm run lib:build
+      run-build: false
+      run-ci: false
     secrets:
       NPM_LIBRARY_TOKEN: ${{ secrets.NPM_LIBRARY_TOKEN }}
