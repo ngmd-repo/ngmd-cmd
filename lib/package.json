@@ -1,6 +1,6 @@
 {
   "name": "@ngmd/cmd",
-  "version": "0.0.2",
+  "version": "$(version)",
   "description": "cmd package for CI/CD",
   "main": "index.js",
   "author": {

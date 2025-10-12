@@ -8,7 +8,7 @@ jobs:
     permissions:
       id-token: write
       contents: read
-    uses: ngmd-repo/ngmd-pipelines/.github/workflows/npm-deploy.yml@feature/pipelines
+    uses: ngmd-repo/ngmd-pipelines/.github/workflows/npm-deploy.yml@v1
     with:
       title: ${{ github.event.pull_request.title }}
       publish-directory: "./lib"
