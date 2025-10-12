@@ -1,18 +1,14 @@
 {
-  "name": "ngmd-cmd",
-  "version": "0.0.1",
+  "name": "@ngmd/cmd",
+  "version": "$(version)",
   "description": "cmd package for CI/CD",
   "main": "index.js",
-  "repository": {
-    "url": "https://github.com/ngmd-repo/ngmd-cmd"
-  },
   "author": {
     "email": "sxemax1@gmail.com",
     "name": "Maxim Demidov"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "contributors": [],
   "keywords": [
@@ -26,10 +22,10 @@
     "prepare": "husky"
   },
   "license": "MIT",
-  "bin": {
-    "ngmd-cmd": "bin/index.mjs"
-  },
   "devDependencies": {
-    "@ngmd/git-flow": "~0.0.3"
+    "@ngmd/git-flow": "~0.0.2"
+  },
+  "bin": {
+    "ngmd-cmd": "src/index.mjs"
   }
 }
