@@ -12,5 +12,7 @@ jobs:
     with:
       title: ${{ github.event.pull_request.title }}
       publish-directory: "./lib"
+      run-build: false
+      run-ci: false
     secrets:
       NPM_LIBRARY_TOKEN: ${{ secrets.NPM_LIBRARY_TOKEN }}
